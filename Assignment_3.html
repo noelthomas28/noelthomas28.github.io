@@ -3,35 +3,20 @@
         <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
         <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
         <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
-        <title>This is my example homepage.</title>
+        <title>IS445 Assignment 3</title>
     </head>
     <body>
         <p>
-            This is some text.
+            IS445 Assignment-3
         </p>
-        <p>
-            This is some more text.
-        </p>
-        <div id="myviz">
-        </div>
     </body>
     <script>
         mySpec = {
     "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
     "data": {
-        "values": [
-            {"A": 20, "B": 21, "C": 2},
-            {"A": 30, "B": 20, "C": 4},
-            {"A": 25, "B": 15, "C": 6},
-            {"A": 5, "B": 30, "C": 8}
-        ]
+        "url":"https://github.com/noelthomas28/noelthomas28.github.io/blob/main/building_inventory.csv?raw=true"
     },
     "mark": "circle",
-    "encoding": {
-        "x": { "field": "A", "type": "quantitative"},
-        "y": { "field": "B", "type": "quantitative"},
-        "size": { "field": "C", "type": "quantitative"}
-    }
 };
         vegaEmbed('#myviz', mySpec);
     </script>
