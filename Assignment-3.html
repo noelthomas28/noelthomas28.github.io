@@ -15,16 +15,14 @@
     </body>
     <script>
         mySpec = {
-    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-    "data": {
-        "url":"https://github.com/noelthomas28/noelthomas28.github.io/blob/main/building_inventory.csv?raw=true"
-    },
-    "mark": "point",
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {"url":"https://raw.githubusercontent.com/noelthomas28/noelthomas28.github.io/main/building_inventory.csv"},
+    "mark": "bar",
     "encoding":{
-        "x": {"field": "Congressional Dist", "type":"nominal"},
-        "y": {"field": "Square Footage", "aggregate":"sum", "type":"quantitative"}
-    }
-};
+        "x": {"field": "Congress Dist", "type":"nominal"},
+        "y": {"field": "Square Footage","aggregate":"sum","type":"quantitative"}
+                }
+    };
         vegaEmbed('#myviz', mySpec);
     </script>
 </html>
