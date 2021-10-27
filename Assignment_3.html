@@ -16,7 +16,11 @@
     "data": {
         "url":"https://github.com/noelthomas28/noelthomas28.github.io/blob/main/building_inventory.csv?raw=true"
     },
-    "mark": "circle",
+    "mark": "point",
+    "encoding":{
+        "x": {"field": "Congressional Dist", "type":"quantitative"},
+        "y": {"field": "Square Footage", "aggregate":"sum", "type":"quantitative"}
+    }
 };
         vegaEmbed('#myviz', mySpec);
     </script>
