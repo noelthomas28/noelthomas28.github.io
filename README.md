@@ -1,2 +1,2 @@
 # noelthomas28.github.io
-First Repository
+Assignment 3 is index.html
